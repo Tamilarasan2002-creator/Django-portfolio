@@ -140,104 +140,161 @@
 
 <body class="bg-gray-100 text-gray-800 scroll-smooth">
 
-  
-  
-  <!-- ✅ Navbar -->
-  <nav class="bg-black/80 backdrop-blur-md shadow-md fixed top-0 left-0 w-full z-50 transition-all duration-300">
-    <div class="max-w-7xl mx-auto px-4 py-4 flex items-center justify-between">
-      <div class="text-2xl font-bold text-white tracking-wider hover:scale-105 transition duration-300 cursor-pointer">
-        Tamilarasan
-      </div>
-      <div class="hidden md:flex space-x-6 text-white font-medium">
-        <a href="#hero" class="relative group transition duration-300">Home
-          <span class="absolute bottom-0 left-0 w-0 h-1 bg-blue-500 transition-all duration-300 group-hover:w-full"></span>
-        </a>
-        <a href="#summary" class="relative group transition duration-300">Summary
-          <span class="absolute bottom-0 left-0 w-0 h-1 bg-blue-500 transition-all duration-300 group-hover:w-full"></span>
-        </a>
-        <a href="#experience" class="relative group transition duration-300 ease-in-out">
-          Experience
-          <span class="absolute bottom-0 left-0 h-0.5 w-0 bg-blue-500 transition-all duration-300 ease-in-out group-hover:w-full"></span>
-        </a>               
-        <a href="#skills" class="relative group transition duration-300">Skills
-          <span class="absolute bottom-0 left-0 w-0 h-1 bg-blue-500 transition-all duration-300 group-hover:w-full"></span>
-        </a>
-        <a href="#projects" class="relative group transition duration-300">Projects
-          <span class="absolute bottom-0 left-0 w-0 h-1 bg-blue-500 transition-all duration-300 group-hover:w-full"></span>
-        </a>
-        <a href="#certificates" class="relative group transition duration-300">Certificates
-          <span class="absolute bottom-0 left-0 w-0 h-1 bg-blue-500 transition-all duration-300 group-hover:w-full"></span>
-        </a>
-        <a href="#education" class="relative group transition duration-300">Education
-          <span class="absolute bottom-0 left-0 w-0 h-1 bg-blue-500 transition-all duration-300 group-hover:w-full"></span>
-        </a>
-        <a href="#contact" class="relative group transition duration-300">Contact
-          <span class="absolute bottom-0 left-0 w-0 h-1 bg-blue-500 transition-all duration-300 group-hover:w-full"></span>
-        </a>
-      </div>
-      <div class="md:hidden">
-        <button id="menu-btn" class="text-white focus:outline-none hover:scale-110 transition duration-300">
-          <svg class="w-7 h-7" fill="none" stroke="currentColor" stroke-width="2"
-               viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round">
-            <path d="M4 6h16M4 12h16M4 18h16"/>
-          </svg>
-        </button>
-      </div>
+<nav class="bg-black/80 backdrop-blur-md shadow-md fixed top-0 left-0 w-full z-50 transition-all duration-300">
+  <div class="max-w-7xl mx-auto px-4 py-4 flex items-center justify-between">
+    <!-- Brand -->
+    <div class="text-xl lg:text-2xl font-bold text-white tracking-wider hover:scale-105 transition duration-300 cursor-pointer">
+      Tamilarasan
     </div>
-  
-    <!-- ✅ Mobile Menu -->
-    <div id="mobile-menu" class="hidden md:hidden px-4 pb-4 space-y-2 transition-all duration-300">
-      <a href="#hero" class="block py-2 text-white hover:text-blue-500">Home</a>
-      <a href="#summary" class="block py-2 text-white hover:text-blue-500">Summary</a>
-      <a href="#experience" class="block py-2 text-white hover:text-blue-500">Experience</a>
-      <a href="#skills" class="block py-2 text-white hover:text-blue-500">Skills</a>
-      <a href="#projects" class="block py-2 text-white hover:text-blue-500">Projects</a>
-      <a href="#certificates" class="block py-2 text-white hover:text-blue-500">Certificates</a>
-      <a href="#education" class="block py-2 text-white hover:text-blue-500">Education</a>
-      <a href="#contact" class="block py-2 text-white hover:text-blue-500">Contact</a>
+
+    <!-- Desktop Menu -->
+    <div class="hidden lg:flex space-x-6 text-white font-medium">
+      <a href="#hero" class="relative group transition duration-300">Home
+        <span class="absolute bottom-0 left-0 w-0 h-1 bg-blue-500 transition-all duration-300 group-hover:w-full"></span>
+      </a>
+      <a href="#summary" class="relative group transition duration-300">Summary
+        <span class="absolute bottom-0 left-0 w-0 h-1 bg-blue-500 transition-all duration-300 group-hover:w-full"></span>
+      </a>
+      <a href="#experience" class="relative group transition duration-300 ease-in-out">Experience
+        <span class="absolute bottom-0 left-0 w-0 h-1 bg-blue-500 transition-all duration-300 group-hover:w-full"></span>
+      </a>
+      <a href="#skills" class="relative group transition duration-300">Skills
+        <span class="absolute bottom-0 left-0 w-0 h-1 bg-blue-500 transition-all duration-300 group-hover:w-full"></span>
+      </a>
+      <a href="#projects" class="relative group transition duration-300">Projects
+        <span class="absolute bottom-0 left-0 w-0 h-1 bg-blue-500 transition-all duration-300 group-hover:w-full"></span>
+      </a>
+      <a href="#certificates" class="relative group transition duration-300">Certificates
+        <span class="absolute bottom-0 left-0 w-0 h-1 bg-blue-500 transition-all duration-300 group-hover:w-full"></span>
+      </a>
+      <a href="#education" class="relative group transition duration-300">Education
+        <span class="absolute bottom-0 left-0 w-0 h-1 bg-blue-500 transition-all duration-300 group-hover:w-full"></span>
+      </a>
+      <a href="#contact" class="relative group transition duration-300">Contact
+        <span class="absolute bottom-0 left-0 w-0 h-1 bg-blue-500 transition-all duration-300 group-hover:w-full"></span>
+      </a>
+    </div>
+
+    <!-- Mobile Hamburger Button -->
+    <div class="lg:hidden">
+      <button id="menu-btn" class="text-white focus:outline-none hover:scale-110 transition duration-300">
+        <!-- Hamburger Icon -->
+        <svg id="hamburger-icon" class="w-7 h-7 block" fill="none" stroke="currentColor" stroke-width="2"
+             viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M4 6h16M4 12h16M4 18h16" />
+        </svg>
+        <!-- Close Icon -->
+        <svg id="close-icon" class="w-7 h-7 hidden" fill="none" stroke="currentColor" stroke-width="2"
+             viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M6 18L18 6M6 6l12 12" />
+        </svg>
+      </button>
+    </div>
+  </div>
+
+  <!-- Mobile Menu -->
+  <div id="mobile-menu" 
+       class="absolute top-full left-0 w-full bg-black/90 border-t border-gray-700 
+              lg:hidden px-4 pb-4 space-y-2 
+              max-h-0 overflow-hidden transition-all duration-500 ease-in-out"
+       style="will-change: max-height;">
+    <a href="#hero" class="block py-2 text-white hover:text-blue-500">Home</a>
+    <a href="#summary" class="block py-2 text-white hover:text-blue-500">Summary</a>
+    <a href="#experience" class="block py-2 text-white hover:text-blue-500">Experience</a>
+    <a href="#skills" class="block py-2 text-white hover:text-blue-500">Skills</a>
+    <a href="#projects" class="block py-2 text-white hover:text-blue-500">Projects</a>
+    <a href="#certificates" class="block py-2 text-white hover:text-blue-500">Certificates</a>
+    <a href="#education" class="block py-2 text-white hover:text-blue-500">Education</a>
+    <a href="#contact" class="block py-2 text-white hover:text-blue-500">Contact</a>
+  </div>
+</nav>
+
+<!-- Script -->
+<script>
+  const menuBtn = document.getElementById('menu-btn');
+  const mobileMenu = document.getElementById('mobile-menu');
+  const hamburgerIcon = document.getElementById('hamburger-icon');
+  const closeIcon = document.getElementById('close-icon');
+
+  menuBtn.addEventListener('click', () => {
+    const isClosed = mobileMenu.classList.contains('max-h-0');
+
+    mobileMenu.classList.toggle('max-h-0', !isClosed);
+    mobileMenu.classList.toggle('max-h-[600px]', isClosed);
+
+    hamburgerIcon.classList.toggle('hidden', isClosed);
+    closeIcon.classList.toggle('hidden', !isClosed);
+
+    document.body.classList.toggle('overflow-hidden', isClosed);
+  });
+
+  const navLinks = mobileMenu.querySelectorAll('a');
+  navLinks.forEach(link => {
+    link.addEventListener('click', () => {
+      mobileMenu.classList.remove('max-h-[600px]');
+      mobileMenu.classList.add('max-h-0');
+
+      hamburgerIcon.classList.remove('hidden');
+      closeIcon.classList.add('hidden');
+
+      document.body.classList.remove('overflow-hidden');
+    });
+  });
+</script>
 
 
-    </div>
-  </nav>
   
 
-  <!-- ✅ Hero Section -->
-  <section id="hero" class="relative min-h-screen flex items-center justify-start overflow-hidden pt-20">
-    <div class="absolute inset-0">
-        <img src="{% static 'portfolio/images/img1.jpg' %}" class="fade-image absolute inset-0 w-full h-full object-cover visible" id="img1">
-        <img src="{% static 'portfolio/images/img2.jpg' %}" class="fade-image absolute inset-0 w-full h-full object-cover" id="img2">
-        <img src="{% static 'portfolio/images/img3.jpg' %}" class="fade-image absolute inset-0 w-full h-full object-cover" id="img3">
-    </div>
-    <div class="absolute inset-0 bg-black bg-opacity-60"></div>
-    <div class="relative mx-4 md:mx-20 p-6 md:p-20 text-center z-10">
-        <h1 class="text-4xl md:text-9xl font-bold text-white typing-animation">HELLO</h1>
-        <h2 class="text-2xl md:text-6xl font-semibold mt-2 text-white typing-animation">I'M Tamilarasan</h2>
-        <p class="text-lg md:text-2xl text-gray-200 typing-animation">Full Stack Developer</p>
-    </div>
+<!-- ✅ Hero Section -->
+<section id="hero" class="relative min-h-screen flex items-center justify-center overflow-hidden pt-24 px-4 sm:px-6 lg:px-16">
+  <!-- Background Images -->
+  <div class="absolute inset-0 z-0">
+    <img src="{% static 'portfolio/images/img1.jpg' %}" class="fade-image absolute inset-0 w-full h-full object-cover visible" id="img1">
+    <img src="{% static 'portfolio/images/img2.jpg' %}" class="fade-image absolute inset-0 w-full h-full object-cover" id="img2">
+    <img src="{% static 'portfolio/images/img3.jpg' %}" class="fade-image absolute inset-0 w-full h-full object-cover" id="img3">
+    <div class="absolute inset-0 bg-black/70"></div> <!-- Dark overlay -->
+  </div>
+
+  <!-- Content -->
+  <div class="relative z-10 text-center max-w-4xl mx-auto">
+    <h1 class="text-4xl sm:text-5xl md:text-7xl lg:text-8xl font-bold text-white typing-animation">
+      HELLO
+    </h1>
+    <h2 class="text-xl sm:text-3xl md:text-5xl lg:text-6xl font-semibold mt-4 text-white typing-animation">
+      I'M Tamilarasan
+    </h2>
+    <p class="mt-4 text-base sm:text-lg md:text-xl lg:text-2xl text-gray-200 typing-animation">
+      Full Stack Developer
+    </p>
+  </div>
 </section>
+
 
 
 
 <!-- ✅ Summary Section -->
-<section id="summary" class="py-20 mb-30 flex items-center justify-center px-4 md:px-10 relative">
-    <!-- Static Background Image -->
-    <div class="absolute inset-0 bg-cover bg-center bg-fixed" style="background-image: url('{% static 'portfolio/images/summary.jpg' %}'); z-index: -1;"></div>
+<section id="summary" class="relative py-20 px-4 sm:px-6 lg:px-20 flex items-center justify-center">
+  <!-- Static Background Image -->
+  <div class="absolute inset-0 bg-fixed bg-cover bg-center" style="background-image: url('{% static 'portfolio/images/summary.jpg' %}'); z-index: -1;"></div>
 
-    <!-- Overlay Layer to cover the background -->
-    <div class="absolute inset-0 bg-black opacity-40 z-0"></div>
+  <!-- Dark Overlay -->
+  <div class="absolute inset-0 bg-black bg-opacity-60 z-0"></div>
 
-    <div class="text-center px-6 md:px-10 py-10 max-w-2xl mb-10 mx-auto" data-aos="fade-up" data-aos-duration="1200">
-      <h1 class="text-3xl md:text-4xl font-bold mb-6 text-gray-900">Summary</h1>
-      <div class="p-8 transition-all duration-500 transform hover:scale-105" data-aos="fade-up" data-aos-duration="1500">
-        <p class="text-base  md:text-lg  text-black leading-relaxed">
-          {{ summary.content }}
-        </p>
-      </div>
+  <!-- Content -->
+  <div class="relative z-10 text-center max-w-3xl mx-auto" data-aos="fade-up" data-aos-duration="1200">
+    <h1 class="text-3xl sm:text-4xl md:text-5xl font-bold mb-8 text-white">
+      Summary
+    </h1>
+    <div class="p-6 sm:p-8 bg-white/80 rounded-xl shadow-lg backdrop-blur-md transition-all duration-500 transform hover:scale-105" data-aos="fade-up" data-aos-duration="1500">
+      <p class="text-sm sm:text-base md:text-lg text-gray-800 leading-relaxed">
+        {{ summary.content }}
+      </p>
     </div>
+  </div>
 </section>
 
 
-<!-- ✅ Experience Section -->
+
 <!-- ✅ Experience Section -->
 <section id="experience" class="scroll-mt-28 px-4 py-20 bg-white text-white">
   <div class="max-w-7xl mx-auto">
@@ -245,7 +302,8 @@
 
     <!-- Experience Cards -->
     {% for exp in experience %}
-    <div class="bg-black rounded-2xl p-6 shadow-lg mb-8 hover:scale-[1.02] transition-transform duration-300" data-aos="fade-up" data-aos-delay="{{ forloop.counter0|add:1 }}00">
+    <div class="bg-black rounded-2xl p-6 shadow-lg mb-8 hover:scale-[1.02] transition-transform duration-300"
+         data-aos="fade-up" data-aos-delay="{{ forloop.counter0|add:1 }}00">
       <h3 class="text-xl font-semibold text-blue-400">{{ exp.position }}</h3>
       <p class="text-sm text-gray-400 mb-2">{{ exp.company }}</p>
       <ul class="list-disc list-inside space-y-2 text-gray-200">
@@ -262,7 +320,7 @@
         <h1 class="text-2xl font-bold mb-4 text-blue-400">Hands-on Experience</h1>
         <p class="text-base leading-relaxed">
           Worked on real-world projects using <br />
-          Python, SQL, JavaScript, Django, React, and Frappe.
+          Python, Django, Selenium, Mysql, JavaScript, React, and Frappe.
         </p>
       </div>
     </div>
@@ -344,25 +402,64 @@
   
   
 
-  <!-- ✅ Certificates Section -->
+{% load static %}
+
+<!-- ✅ Certificates Section -->
+{% load static %}
+
+<!-- ✅ Certificates Section -->
 <section id="certificates" class="py-16 bg-blue-50">
   <div class="container mx-auto px-4">
     <h2 class="text-3xl font-bold text-center mb-10 text-blue-900">🎓 My Certificates</h2>
 
-    <!-- Scrollable certificate box -->
-    <div class="relative max-h-[500px] overflow-y-auto rounded-2xl bg-white shadow-inner border-4 border-blue-200 p-6 scroll-smooth">
-      <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 pb-10"> <!-- Added padding-bottom -->
-        {% for certificate in certificates %}
-        <div class="bg-blue-100 rounded-xl shadow-md hover:shadow-xl transform transition duration-300 hover:scale-105 p-5 text-center opacity-0 translate-y-4 scroll-animate">
-          <div class="text-5xl mb-3">📜</div>
-          <h3 class="text-lg font-semibold text-blue-800 mb-1">{{ certificate.title }}</h3>
-          <p class="text-sm text-gray-700">🏫 {{ certificate.issued_by }}</p>
-        </div>
-        {% endfor %}
+    <!-- Certificates Grid -->
+    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+      {% for certificate in certificates %}
+      <div 
+        class="bg-blue-100 rounded-xl shadow-md hover:shadow-xl transform transition duration-300 hover:scale-105 p-5 text-center cursor-pointer"
+        onclick="showModal('{% static certificate.image %}', '{{ certificate.title|escapejs }}')"
+      >
+        <div class="text-5xl mb-3">📜</div>
+        <h3 class="text-lg font-semibold text-blue-800 mb-1">{{ certificate.title }}</h3>
+        <p class="text-sm text-gray-700">🏫 {{ certificate.issued_by }}</p>
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+
+  <!-- ✅ Responsive Modal for Portrait + Landscape -->
+  <div id="certModal" class="fixed inset-0 bg-black bg-opacity-70 z-50 hidden items-center justify-center p-4">
+    <div class="relative bg-white p-4 rounded-xl max-w-3xl w-full max-h-[90vh] overflow-auto">
+      <!-- Close Button -->
+      <button class="absolute top-2 right-2 text-gray-500 hover:text-red-500 text-2xl font-bold z-10" onclick="closeModal()">×</button>
+
+      <!-- Modal Title -->
+      <h2 id="modalTitle" class="text-center text-xl font-semibold mb-4 text-blue-700"></h2>
+
+      <!-- Certificate Image -->
+      <div class="flex justify-center">
+        <img id="modalImage" src="" alt="Certificate" class="max-w-full max-h-[75vh] object-contain rounded-md shadow" />
       </div>
     </div>
   </div>
 </section>
+
+<!-- ✅ Modal Script -->
+<script>
+  function showModal(imageUrl, title) {
+    document.getElementById("modalTitle").innerText = title;
+    document.getElementById("modalImage").src = imageUrl;
+    document.getElementById("certModal").classList.remove("hidden");
+    document.getElementById("certModal").classList.add("flex");
+  }
+
+  function closeModal() {
+    document.getElementById("certModal").classList.remove("flex");
+    document.getElementById("certModal").classList.add("hidden");
+  }
+</script>
+
+
 
 
 <!--education section-->

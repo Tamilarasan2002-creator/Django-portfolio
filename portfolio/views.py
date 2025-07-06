@@ -99,12 +99,18 @@ def home(request):
 ],
 
 
-        'certificates': [
-            {'title': 'HTML,CSS,JavaScript', 'issued_by': 'Infosys'},
-            {'title': 'Introduction of CyberSecurity', 'issued_by': 'Network Security'},
-            {'title': '2nd IEEE International Conference on Data Science and Network Security (ICDSNS - 2024)', 'issued_by': ' Kalpataru Institute of Technology'},
-            {'title': 'Typewriting English Junior (FIRST CLASS WITH DISTINCTION)', 'issued_by': 'Government Of Tamil Nadu'},
-        ],  
+    'certificates': [
+    { 'title': 'PYTHON', 'issued_by': 'Udemy', 'image': 'portfolio/certificates/python.jpg' },
+    { 'title': 'HTML', 'issued_by': 'Infosys', 'image': 'portfolio/certificates/html.jpg' },
+    { 'title': 'CSS', 'issued_by': 'Infosys', 'image': 'portfolio/certificates/css.jpg' },
+    { 'title': 'JavaScript', 'issued_by': 'Infosys', 'image': 'portfolio/certificates/js.jpg' },
+    { 'title': 'HTML', 'issued_by': 'Udemy', 'image': 'portfolio/certificates/udemy_html.jpg' },
+    { 'title': '2nd IEEE...', 'issued_by': 'KIT', 'image': 'portfolio/certificates/iee.jpg' },
+    { 'title': 'Typewriting', 'issued_by': 'Govt TN', 'image': 'portfolio/certificates/type.jpg' },
+],
+
+
+
         'education': [
     {
         'degree': 'B.E CyberScsurity',
@@ -113,7 +119,7 @@ def home(request):
         'score': '8.3 CGPA',
         'details': [
             'Specialized in Web Development and Network Security.',
-            'Completed final year project on Wireless Sensor Networks using POA.',
+            'Completed final year project on Wireless Sensor Networks usi   ng POA.',
         ]
     },
     {
@@ -138,7 +144,7 @@ def home(request):
     }
 ],
 
-        'experience': [
+'experience': [
     {
         'position': 'FullStack Python Developer',
         'company': 'Regent Info Solution',
@@ -150,7 +156,19 @@ def home(request):
             'Automated routine business operations like invoice generation, reporting, and data validation using Frappe’s server-side scripting and scheduler events, increasing operational efficiency and reducing human errors.'
         ]
     },
+    {
+        'position': 'Python Developer',
+        'company': ' Leap Green Energy ',
+        'description': [
+            'Built a Django-based automation system for handling end-to-end data processing tasks including web scraping, email handling, and reporting.',
+            'Used Selenium to extract weather data from Windy.com, stored results in a database, and presented visual reports through HTML/CSS-based web interfaces.',
+            'Automated Gmail inbox monitoring using the IMAP library to detect recent emails, download attachments, and parse Excel files.',
+            'Extracted and stored structured data from Excel attachments into the database, enabling scheduled backend processing without manual intervention.',
+            'Designed the entire workflow to run in a fully automated manner, integrating multiple components for real-time data collection and reporting.'
+        ]
+    },
 ],
+
 
    'contact': {
         'name': 'Tamilarasan',
@@ -162,4 +180,5 @@ def home(request):
     }
     }
     return render(request, 'home.html', context)   
+
 

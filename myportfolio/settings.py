@@ -28,8 +28,9 @@ MEDIA_URL = '/media/'
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 
 # Additional locations of static files (like Tailwind build output or images)
-STATICFILES_DIRS = [os.path.join(BASE_DIR, 'portfolio/static')]  # Only needed during development
-
+STATICFILES_DIRS = [
+    os.path.join(BASE_DIR, 'static'),
+]
 
 
 # Application definition
@@ -102,9 +103,6 @@ LANGUAGE_CODE = 'en-us'
 TIME_ZONE = 'UTC'
 USE_I18N = True
 USE_TZ = True
-
-# Static files (CSS, JavaScript, Images)
-STATIC_URL = 'static/'
 
 # Default primary key field type
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
