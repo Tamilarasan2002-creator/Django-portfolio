@@ -1,3 +1,3 @@
 ## 📸 Screenshots
 
-![Home Page](screenshots/)
+![Home Page](screenshots/image.png)
