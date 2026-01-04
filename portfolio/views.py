@@ -8,14 +8,14 @@ def home(request):
         'technical_skills': [
             {'name': '🐍 Python'},
             {'name': '⚙️ Django'},
+            {'name': '🧪 Selenium'},
+            {'name': '🔗 REST API'},
+            {'name': '🐬 MySQL'},
             {'name': '🖥️ Frappe'},
             {'name': '⚛️ React'},
             {'name': '💨 Tailwind CSS'},
-            {'name': '🧪 Selenium'},
-            {'name': '📜 JavaScript'},
             {'name': '🌿 Git'},
-            {'name': '🔗 REST API'},
-            {'name': '🐬 MySQL'},
+            {'name': '📜 JavaScript'},
             {'name': '📄 HTML'},
             {'name': '🎨 CSS'},
             {'name': '📊 Pandas'},
@@ -146,17 +146,6 @@ def home(request):
 
 'experience': [
     {
-        'position': 'FullStack Python Developer',
-        'company': 'Regent Info Solution',
-        'description': [
-            'Developed and customized applications within the Frappe framework using Python scripting and automation to improve business processes.',
-            'Designed and optimized billing software screens and reports, enhancing system efficiency by 20% through optimized queries and automation.',
-            'Created and deployed Python-based REST APIs for seamless data exchange between different modules.',
-            'Improved database performance using SQL queries, reducing query execution time by 30%.',
-            'Automated routine business operations like invoice generation, reporting, and data validation using Frappe’s server-side scripting and scheduler events, increasing operational efficiency and reducing human errors.'
-        ]
-    },
-    {
         'position': 'Python Developer',
         'company': ' Leap Green Energy ',
         'description': [
@@ -167,6 +156,17 @@ def home(request):
             'Designed the entire workflow to run in a fully automated manner, integrating multiple components for real-time data collection and reporting.'
         ]
     },
+    {
+        'position': 'FullStack Python Developer',
+        'company': 'Regent Info Solution',
+        'description': [
+            'Developed and customized applications within the Frappe framework using Python scripting and automation to improve business processes.',
+            'Designed and optimized billing software screens and reports, enhancing system efficiency by 20% through optimized queries and automation.',
+            'Created and deployed Python-based REST APIs for seamless data exchange between different modules.',
+            'Improved database performance using SQL queries, reducing query execution time by 30%.',
+            'Automated routine business operations like invoice generation, reporting, and data validation using Frappe’s server-side scripting and scheduler events, increasing operational efficiency and reducing human errors.'
+        ]
+    }
 ],
 
 

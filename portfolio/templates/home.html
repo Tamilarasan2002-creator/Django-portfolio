@@ -1,377 +1,367 @@
 {% load static %}
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8">
-    <title>Tamil-portfolio</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script>
-      AOS.init({
-        once: true, // animate once only
-        duration: 1000, // animation duration in ms
-        easing: 'ease-out-cubic', // smoother easing
-        mirror: false, // disables repeated animation on scroll up
-        throttleDelay: 50, // improves scroll performance
-        debounceDelay: 100,
-      });
-    </script>
-    <style>
-      
 
-      
+<head>
+  <meta charset="UTF-8">
+  <title>Tamil-portfolio</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- AOS CSS -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
-      /* Typing Animation without cursor */
-@keyframes typing {
-  0% {
-    width: 0;
-  }
-  100% {
-    width: 100%;
-  }
-}
-/* Typing Animation without cursor */
-@keyframes typing {
-  0% {
-    width: 0;
-  }
-  100% {
-    width: 100%;
-  }
-}
-
-/* Typing effect */
-@keyframes typing {
-  0% {
-    width: 0;
-  }
-  100% {
-    width: 100%;
-  }
-}
-
-/* Typing effect */
-@keyframes typing {
-  0% {
-    width: 0;
-  }
-  100% {
-    width: 100%;
-  }
-}
-
-/* Typing animation for each line */
-.typing-animation {
-  display: inline-block;
-  overflow: hidden;
-  white-space: nowrap;
-  animation: typing 1.5s steps(30) 1 normal both; /* Faster typing animation */
-  width: 0; /* Start with zero width */
-  animation-timing-function: cubic-bezier(0.25, 0.1, 0.25, 1); /* Smooth easing */
-}
-
-/* Reduce delays to minimize the time between lines */
-.typing-animation:nth-child(1) {
-  animation-delay: 0s; /* First line starts immediately */
-}
-
-.typing-animation:nth-child(2) {
-  animation-delay: 1.7s; /* Start second line right after first line finishes */
-}
-
-.typing-animation:nth-child(3) {
-  animation-delay: 3.4s; /* Start third line immediately after second one finishes */
-}
-
-
-
-
-      
-      .fade-image {
-        opacity: 0;
-        transition: opacity 1s ease-in-out;
-        will-change: opacity;
+  <style>
+    /* Typing Animation without cursor */
+    @keyframes typing {
+      0% {
+        width: 0;
       }
-      .fade-image.visible {
-        opacity: 1;
+
+      100% {
+        width: 100%;
       }
-      [data-aos] {
-        will-change: transform, opacity;
+    }
+
+    /* Typing Animation without cursor */
+    @keyframes typing {
+      0% {
+        width: 0;
       }
-      html {
-        scroll-behavior: smooth;
+
+      100% {
+        width: 100%;
       }
-      body {
-        overflow-x: hidden;
+    }
+
+    /* Typing effect */
+    @keyframes typing {
+      0% {
+        width: 0;
       }
-    </style>
-  </head>
-  
-<script>
-  AOS.init({
-    duration: 1000,
-    once: true,
-    easing: 'ease-out-cubic', // smoother easing
-    mirror: false, // disables repeated animation on scroll up
-    throttleDelay: 50, // improves scroll performance
-    debounceDelay: 100,
-  });
-</script>
 
-<!-- In <head> -->
-<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-<!-- Before </body> -->
-<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-<script>
-  AOS.init();
-</script>
+      100% {
+        width: 100%;
+      }
+    }
 
-<!-- Before </body> -->
-<script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
-<script>
-  AOS.init({
-    duration: 800, // animation duration in ms
-    easing: 'ease-in-out',
-    once: true, // whether animation should happen only once - while scrolling down
-  });
-</script>
+    /* Typing effect */
+    @keyframes typing {
+      0% {
+        width: 0;
+      }
+
+      100% {
+        width: 100%;
+      }
+    }
+
+    /* Typing animation for each line */
+    .typing-animation {
+      display: inline-block;
+      overflow: hidden;
+      white-space: nowrap;
+      animation: typing 1.5s steps(30) 1 normal both;
+      /* Faster typing animation */
+      width: 0;
+      /* Start with zero width */
+      animation-timing-function: cubic-bezier(0.25, 0.1, 0.25, 1);
+      /* Smooth easing */
+    }
+
+    /* Reduce delays to minimize the time between lines */
+    .typing-animation:nth-child(1) {
+      animation-delay: 0s;
+      /* First line starts immediately */
+    }
+
+    .typing-animation:nth-child(2) {
+      animation-delay: 1.7s;
+      /* Start second line right after first line finishes */
+    }
+
+    .typing-animation:nth-child(3) {
+      animation-delay: 3.4s;
+      /* Start third line immediately after second one finishes */
+    }
 
 
-<body class="bg-gray-100 text-gray-800 scroll-smooth">
 
-<nav class="bg-black/80 backdrop-blur-md shadow-md fixed top-0 left-0 w-full z-50 transition-all duration-300">
-  <div class="max-w-7xl mx-auto px-4 py-4 flex items-center justify-between">
-    <!-- Brand -->
-    <div class="text-xl lg:text-2xl font-bold text-white tracking-wider hover:scale-105 transition duration-300 cursor-pointer">
-      Tamilarasan
+
+
+    .fade-image {
+      opacity: 0;
+      transition: opacity 1s ease-in-out;
+      will-change: opacity;
+    }
+
+    .fade-image.visible {
+      opacity: 1;
+    }
+
+    [data-aos] {
+      will-change: transform, opacity;
+    }
+
+
+
+    body {
+      overflow-x: hidden;
+    }
+  </style>
+</head>
+
+
+
+
+<body class="bg-gray-100 text-gray-800">
+
+  <nav class="bg-black/80 backdrop-blur-md shadow-md fixed top-0 left-0 w-full z-50 transition-all duration-300">
+    <div class="max-w-7xl mx-auto px-4 py-4 flex items-center justify-between">
+      <!-- Brand -->
+      <div
+        class="text-xl lg:text-2xl font-bold text-white tracking-wider hover:scale-105 transition duration-300 cursor-pointer">
+        Tamilarasan
+      </div>
+
+      <!-- Desktop Menu -->
+      <div class="hidden lg:flex space-x-6 text-white font-medium">
+        <a href="#hero" class="relative group transition duration-300">Home
+          <span
+            class="absolute bottom-0 left-0 w-0 h-1 bg-blue-500 transition-all duration-300 group-hover:w-full"></span>
+        </a>
+        <a href="#summary" class="relative group transition duration-300">Summary
+          <span
+            class="absolute bottom-0 left-0 w-0 h-1 bg-blue-500 transition-all duration-300 group-hover:w-full"></span>
+        </a>
+        <a href="#experience" class="relative group transition duration-300 ease-in-out">Experience
+          <span
+            class="absolute bottom-0 left-0 w-0 h-1 bg-blue-500 transition-all duration-300 group-hover:w-full"></span>
+        </a>
+        <a href="#skills" class="relative group transition duration-300">Skills
+          <span
+            class="absolute bottom-0 left-0 w-0 h-1 bg-blue-500 transition-all duration-300 group-hover:w-full"></span>
+        </a>
+        <a href="#projects" class="relative group transition duration-300">Projects
+          <span
+            class="absolute bottom-0 left-0 w-0 h-1 bg-blue-500 transition-all duration-300 group-hover:w-full"></span>
+        </a>
+        <a href="#certificates" class="relative group transition duration-300">Certificates
+          <span
+            class="absolute bottom-0 left-0 w-0 h-1 bg-blue-500 transition-all duration-300 group-hover:w-full"></span>
+        </a>
+        <a href="#education" class="relative group transition duration-300">Education
+          <span
+            class="absolute bottom-0 left-0 w-0 h-1 bg-blue-500 transition-all duration-300 group-hover:w-full"></span>
+        </a>
+        <a href="#contact" class="relative group transition duration-300">Contact
+          <span
+            class="absolute bottom-0 left-0 w-0 h-1 bg-blue-500 transition-all duration-300 group-hover:w-full"></span>
+        </a>
+      </div>
+
+      <!-- Mobile Hamburger Button -->
+      <div class="lg:hidden">
+        <button id="menu-btn" class="text-white focus:outline-none hover:scale-110 transition duration-300">
+          <!-- Hamburger Icon -->
+          <svg id="hamburger-icon" class="w-7 h-7 block" fill="none" stroke="currentColor" stroke-width="2"
+            viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M4 6h16M4 12h16M4 18h16" />
+          </svg>
+          <!-- Close Icon -->
+          <svg id="close-icon" class="w-7 h-7 hidden" fill="none" stroke="currentColor" stroke-width="2"
+            viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M6 18L18 6M6 6l12 12" />
+          </svg>
+        </button>
+      </div>
     </div>
 
-    <!-- Desktop Menu -->
-    <div class="hidden lg:flex space-x-6 text-white font-medium">
-      <a href="#hero" class="relative group transition duration-300">Home
-        <span class="absolute bottom-0 left-0 w-0 h-1 bg-blue-500 transition-all duration-300 group-hover:w-full"></span>
-      </a>
-      <a href="#summary" class="relative group transition duration-300">Summary
-        <span class="absolute bottom-0 left-0 w-0 h-1 bg-blue-500 transition-all duration-300 group-hover:w-full"></span>
-      </a>
-      <a href="#experience" class="relative group transition duration-300 ease-in-out">Experience
-        <span class="absolute bottom-0 left-0 w-0 h-1 bg-blue-500 transition-all duration-300 group-hover:w-full"></span>
-      </a>
-      <a href="#skills" class="relative group transition duration-300">Skills
-        <span class="absolute bottom-0 left-0 w-0 h-1 bg-blue-500 transition-all duration-300 group-hover:w-full"></span>
-      </a>
-      <a href="#projects" class="relative group transition duration-300">Projects
-        <span class="absolute bottom-0 left-0 w-0 h-1 bg-blue-500 transition-all duration-300 group-hover:w-full"></span>
-      </a>
-      <a href="#certificates" class="relative group transition duration-300">Certificates
-        <span class="absolute bottom-0 left-0 w-0 h-1 bg-blue-500 transition-all duration-300 group-hover:w-full"></span>
-      </a>
-      <a href="#education" class="relative group transition duration-300">Education
-        <span class="absolute bottom-0 left-0 w-0 h-1 bg-blue-500 transition-all duration-300 group-hover:w-full"></span>
-      </a>
-      <a href="#contact" class="relative group transition duration-300">Contact
-        <span class="absolute bottom-0 left-0 w-0 h-1 bg-blue-500 transition-all duration-300 group-hover:w-full"></span>
-      </a>
-    </div>
-
-    <!-- Mobile Hamburger Button -->
-    <div class="lg:hidden">
-      <button id="menu-btn" class="text-white focus:outline-none hover:scale-110 transition duration-300">
-        <!-- Hamburger Icon -->
-        <svg id="hamburger-icon" class="w-7 h-7 block" fill="none" stroke="currentColor" stroke-width="2"
-             viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round">
-          <path d="M4 6h16M4 12h16M4 18h16" />
-        </svg>
-        <!-- Close Icon -->
-        <svg id="close-icon" class="w-7 h-7 hidden" fill="none" stroke="currentColor" stroke-width="2"
-             viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round">
-          <path d="M6 18L18 6M6 6l12 12" />
-        </svg>
-      </button>
-    </div>
-  </div>
-
-  <!-- Mobile Menu -->
-  <div id="mobile-menu" 
-       class="absolute top-full left-0 w-full bg-black/90 border-t border-gray-700 
+    <!-- Mobile Menu -->
+    <div id="mobile-menu" class="absolute top-full left-0 w-full bg-black/90 border-t border-gray-700 
               lg:hidden px-4 pb-4 space-y-2 
-              max-h-0 overflow-hidden transition-all duration-500 ease-in-out"
-       style="will-change: max-height;">
-    <a href="#hero" class="block py-2 text-white hover:text-blue-500">Home</a>
-    <a href="#summary" class="block py-2 text-white hover:text-blue-500">Summary</a>
-    <a href="#experience" class="block py-2 text-white hover:text-blue-500">Experience</a>
-    <a href="#skills" class="block py-2 text-white hover:text-blue-500">Skills</a>
-    <a href="#projects" class="block py-2 text-white hover:text-blue-500">Projects</a>
-    <a href="#certificates" class="block py-2 text-white hover:text-blue-500">Certificates</a>
-    <a href="#education" class="block py-2 text-white hover:text-blue-500">Education</a>
-    <a href="#contact" class="block py-2 text-white hover:text-blue-500">Contact</a>
-  </div>
-</nav>
+              max-h-0 overflow-hidden transition-all duration-500 ease-in-out" style="will-change: max-height;">
+      <a href="#hero" class="block py-2 text-white hover:text-blue-500">Home</a>
+      <a href="#summary" class="block py-2 text-white hover:text-blue-500">Summary</a>
+      <a href="#experience" class="block py-2 text-white hover:text-blue-500">Experience</a>
+      <a href="#skills" class="block py-2 text-white hover:text-blue-500">Skills</a>
+      <a href="#projects" class="block py-2 text-white hover:text-blue-500">Projects</a>
+      <a href="#certificates" class="block py-2 text-white hover:text-blue-500">Certificates</a>
+      <a href="#education" class="block py-2 text-white hover:text-blue-500">Education</a>
+      <a href="#contact" class="block py-2 text-white hover:text-blue-500">Contact</a>
+    </div>
+  </nav>
 
-<!-- Script -->
-<script>
-  const menuBtn = document.getElementById('menu-btn');
-  const mobileMenu = document.getElementById('mobile-menu');
-  const hamburgerIcon = document.getElementById('hamburger-icon');
-  const closeIcon = document.getElementById('close-icon');
+  <!-- Script -->
+  <script>
+    const menuBtn = document.getElementById('menu-btn');
+    const mobileMenu = document.getElementById('mobile-menu');
+    const hamburgerIcon = document.getElementById('hamburger-icon');
+    const closeIcon = document.getElementById('close-icon');
 
-  menuBtn.addEventListener('click', () => {
-    const isClosed = mobileMenu.classList.contains('max-h-0');
+    menuBtn.addEventListener('click', () => {
+      const isClosed = mobileMenu.classList.contains('max-h-0');
 
-    mobileMenu.classList.toggle('max-h-0', !isClosed);
-    mobileMenu.classList.toggle('max-h-[600px]', isClosed);
+      mobileMenu.classList.toggle('max-h-0', !isClosed);
+      mobileMenu.classList.toggle('max-h-[600px]', isClosed);
 
-    hamburgerIcon.classList.toggle('hidden', isClosed);
-    closeIcon.classList.toggle('hidden', !isClosed);
+      hamburgerIcon.classList.toggle('hidden', isClosed);
+      closeIcon.classList.toggle('hidden', !isClosed);
 
-    document.body.classList.toggle('overflow-hidden', isClosed);
-  });
-
-  const navLinks = mobileMenu.querySelectorAll('a');
-  navLinks.forEach(link => {
-    link.addEventListener('click', () => {
-      mobileMenu.classList.remove('max-h-[600px]');
-      mobileMenu.classList.add('max-h-0');
-
-      hamburgerIcon.classList.remove('hidden');
-      closeIcon.classList.add('hidden');
-
-      document.body.classList.remove('overflow-hidden');
+      document.body.classList.toggle('overflow-hidden', isClosed);
     });
-  });
-</script>
 
+    const navLinks = mobileMenu.querySelectorAll('a');
+    navLinks.forEach(link => {
+      link.addEventListener('click', () => {
+        mobileMenu.classList.remove('max-h-[600px]');
+        mobileMenu.classList.add('max-h-0');
 
-  
+        hamburgerIcon.classList.remove('hidden');
+        closeIcon.classList.add('hidden');
 
-<!-- ✅ Hero Section -->
-<section id="hero" class="relative min-h-screen flex items-center justify-center overflow-hidden pt-24 px-4 sm:px-6 lg:px-16">
-  <!-- Background Images -->
-  <div class="absolute inset-0 z-0">
-    <img src="{% static 'portfolio/images/img1.jpg' %}" class="fade-image absolute inset-0 w-full h-full object-cover visible" id="img1">
-    <img src="{% static 'portfolio/images/img2.jpg' %}" class="fade-image absolute inset-0 w-full h-full object-cover" id="img2">
-    <img src="{% static 'portfolio/images/img3.jpg' %}" class="fade-image absolute inset-0 w-full h-full object-cover" id="img3">
-    <div class="absolute inset-0 bg-black/70"></div> <!-- Dark overlay -->
-  </div>
-
-  <!-- Content -->
-  <div class="relative z-10 text-center max-w-4xl mx-auto">
-    <h1 class="text-4xl sm:text-5xl md:text-7xl lg:text-8xl font-bold text-white typing-animation">
-      HELLO
-    </h1>
-    <h2 class="text-xl sm:text-3xl md:text-5xl lg:text-6xl font-semibold mt-4 text-white typing-animation">
-      I'M Tamilarasan
-    </h2>
-    <p class="mt-4 text-base sm:text-lg md:text-xl lg:text-2xl text-gray-200 typing-animation">
-      Full Stack Developer
-    </p>
-  </div>
-</section>
+        document.body.classList.remove('overflow-hidden');
+      });
+    });
+  </script>
 
 
 
 
-<!-- ✅ Summary Section -->
-<section id="summary" class="relative py-20 px-4 sm:px-6 lg:px-20 flex items-center justify-center">
-  <!-- Static Background Image -->
-  <div class="absolute inset-0 bg-fixed bg-cover bg-center" style="background-image: url('{% static 'portfolio/images/summary.jpg' %}'); z-index: -1;"></div>
+  <!-- ✅ Hero Section -->
+  <section id="hero"
+    class="relative min-h-screen flex items-center justify-center overflow-hidden pt-24 px-4 sm:px-6 lg:px-16">
+    <!-- Background Images -->
+    <div class="absolute inset-0 z-0">
+      <img src="{% static 'portfolio/images/img1.jpg' %}"
+        class="fade-image absolute inset-0 w-full h-full object-cover visible" id="img1">
+      <img src="{% static 'portfolio/images/img2.jpg' %}" class="fade-image absolute inset-0 w-full h-full object-cover"
+        id="img2">
+      <img src="{% static 'portfolio/images/img3.jpg' %}" class="fade-image absolute inset-0 w-full h-full object-cover"
+        id="img3">
+      <div class="absolute inset-0 bg-black/70"></div> <!-- Dark overlay -->
+    </div>
 
-  <!-- Dark Overlay -->
-  <div class="absolute inset-0 bg-black bg-opacity-60 z-0"></div>
-
-  <!-- Content -->
-  <div class="relative z-10 text-center max-w-3xl mx-auto" data-aos="fade-up" data-aos-duration="1200">
-    <h1 class="text-3xl sm:text-4xl md:text-5xl font-bold mb-8 text-white">
-      Summary
-    </h1>
-    <div class="p-6 sm:p-8 bg-white/80 rounded-xl shadow-lg backdrop-blur-md transition-all duration-500 transform hover:scale-105" data-aos="fade-up" data-aos-duration="1500">
-      <p class="text-sm sm:text-base md:text-lg text-gray-800 leading-relaxed">
-        {{ summary.content }}
+    <!-- Content -->
+    <div class="relative z-10 text-center   max-w-4xl mx-auto">
+      <h1 class="text-4xl sm:text-5xl md:text-7xl lg:text-8xl font-bold text-white typing-animation">
+        HELLO
+      </h1>
+      <h2 class="text-xl sm:text-3xl md:text-5xl lg:text-6xl font-semibold mt-4 text-white typing-animation">
+        I'M Tamilarasan
+      </h2>
+      <p class="mt-4 text-base sm:text-lg md:text-xl lg:text-2xl text-gray-200 typing-animation">
+        Full Stack Developer
       </p>
     </div>
-  </div>
-</section>
+  </section>
 
 
 
-<!-- ✅ Experience Section -->
-<section id="experience" class="scroll-mt-28 px-4 py-20 bg-white text-white">
-  <div class="max-w-7xl mx-auto">
-    <h2 class="text-3xl font-bold mb-10 text-center text-black" data-aos="fade-up">Experience</h2>
 
-    <!-- Experience Cards -->
-    {% for exp in experience %}
-    <div class="bg-black rounded-2xl p-6 shadow-lg mb-8 hover:scale-[1.02] transition-transform duration-300"
-         data-aos="fade-up" data-aos-delay="{{ forloop.counter0|add:1 }}00">
-      <h3 class="text-xl font-semibold text-blue-400">{{ exp.position }}</h3>
-      <p class="text-sm text-gray-400 mb-2">{{ exp.company }}</p>
-      <ul class="list-disc list-inside space-y-2 text-gray-200">
-        {% for line in exp.description %}
-          <li>{{ line }}</li>
-        {% endfor %}
-      </ul>
-    </div>
-    {% endfor %}
+  <!-- ✅ Summary Section -->
+  <section id="summary" class="relative py-20 px-4 sm:px-6 lg:px-20 flex items-center justify-center">
+    <!-- Static Background Image -->
+    <div class="absolute inset-0 bg-fixed bg-cover bg-center"
+      style="background-image: url('{% static 'portfolio/images/summary.jpg' %}'); z-index: -1;"></div>
 
-    <!-- Hands-on Experience Box -->
-    <div class="flex justify-center items-center px-4">
-      <div class="bg-black text-white p-8 rounded-2xl shadow-lg text-center max-w-md" data-aos="zoom-in" data-aos-delay="200">
-        <h1 class="text-2xl font-bold mb-4 text-blue-400">Hands-on Experience</h1>
-        <p class="text-base leading-relaxed">
-          Worked on real-world projects using <br />
-          Python, Django, Selenium, Mysql, JavaScript, React, and Frappe.
+    <!-- Dark Overlay -->
+    <div class="absolute inset-0 bg-black bg-opacity-60 z-0"></div>
+
+    <!-- Content -->
+    <div class="relative z-10 text-center max-w-3xl mx-auto" data-aos="fade-up" data-aos-duration="1200">
+      <h1 class="text-3xl sm:text-4xl md:text-5xl font-bold mb-8 text-white">
+        Summary
+      </h1>
+      <div
+        class="p-6 sm:p-8 bg-white/80 rounded-xl shadow-lg backdrop-blur-md transition-all duration-500 transform hover:scale-105"
+        data-aos="fade-up" data-aos-duration="1500">
+        <p class="text-sm sm:text-base md:text-lg text-gray-800 leading-relaxed">
+          {{ summary.content }}
         </p>
       </div>
     </div>
+  </section>
+
+
+
+  <!-- ✅ Experience Section -->
+  <section id="experience" class="scroll-mt-28 px-4 py-20 bg-white text-white">
+    <div class="max-w-7xl mx-auto">
+      <h2 class="text-3xl font-bold mb-10 text-center text-black" data-aos="fade-up">Experience</h2>
+
+      <!-- Experience Cards -->
+      {% for exp in experience %}
+      <div class="bg-black rounded-2xl p-6 shadow-lg mb-8 hover:scale-[1.02] transition-transform duration-300"
+        data-aos="fade-up" data-aos-delay="{{ forloop.counter0|add:1 }}00">
+        <h3 class="text-xl font-semibold text-blue-400">{{ exp.position }}</h3>
+        <p class="text-sm text-gray-400 mb-2">{{ exp.company }}</p>
+        <ul class="list-disc list-inside space-y-2 text-gray-200">
+          {% for line in exp.description %}
+          <li>{{ line }}</li>
+          {% endfor %}
+        </ul>
+      </div>
+      {% endfor %}
+
+      <!-- Hands-on Experience Box -->
+      <div class="flex justify-center items-center px-4">
+        <div class="bg-black text-white p-8 rounded-2xl shadow-lg text-center max-w-md" data-aos="zoom-in"
+          data-aos-delay="200">
+          <h1 class="text-2xl font-bold mb-4 text-blue-400">Hands-on Experience</h1>
+          <p class="text-base leading-relaxed">
+            Worked on real-world projects using <br />
+            Python, Django, Selenium, Mysql, JavaScript, React, and Frappe.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+  <!-- You can duplicate the above div for more experiences -->
   </div>
-</section>
-
-  
-
-    <!-- You can duplicate the above div for more experiences -->
-  </div>
-</section>
+  </section>
 
 
-<section id="skills" class="py-20 px-4 md:px-10 bg-black overflow-hidden">
-  <h2 class="text-3xl font-bold mb-12 text-white text-center"
-      data-aos="fade-down" data-aos-duration="1000">
-    Skills
-  </h2>
+  <section id="skills" class="py-20 px-4 md:px-10 bg-black overflow-hidden">
+    <h2 class="text-3xl font-bold mb-12 text-white text-center" data-aos="fade-down" data-aos-duration="1000">
+      Skills
+    </h2>
 
-  <!-- Technical Skills -->
-  <div class="mb-16">
-    <h3 class="text-2xl font-semibold mb-8 text-white text-center"
-        data-aos="fade-right" data-aos-duration="1000">Technical Skills</h3>
-    
-    <div class="flex flex-wrap justify-center gap-8">
-      {% for skill in technical_skills %}
-        <span class="text-white text-lg font-semibold relative cursor-pointer transition-all duration-300 transform hover:scale-110 hover:text-blue-400"
-              data-aos="fade-up" data-aos-delay="{{ forloop.counter0|add:1 }}00" data-aos-duration="800">
+    <!-- Technical Skills -->
+    <div class="mb-16">
+      <h3 class="text-2xl font-semibold mb-8 text-white text-center" data-aos="fade-right" data-aos-duration="1000">
+        Technical Skills</h3>
+
+      <div class="flex flex-wrap justify-center gap-8">
+        {% for skill in technical_skills %}
+        <span
+          class="text-white text-lg font-semibold relative cursor-pointer transition-all duration-300 transform hover:scale-110 hover:text-blue-400"
+          data-aos="fade-up" data-aos-delay="{{ forloop.counter0|add:1 }}00" data-aos-duration="800">
           {{ skill.name }}
           <span class="block h-0.5 w-0 bg-blue-500 transition-all duration-500 hover:w-full mt-1"></span>
         </span>
-      {% endfor %}
+        {% endfor %}
+      </div>
     </div>
-  </div>
 
-  <!-- Soft Skills -->
-  <div>
-    <h3 class="text-2xl font-semibold mb-8 text-white text-center"
-        data-aos="fade-left" data-aos-duration="1000">Soft Skills</h3>
+    <!-- Soft Skills -->
+    <div>
+      <h3 class="text-2xl font-semibold mb-8 text-white text-center" data-aos="fade-left" data-aos-duration="1000">Soft
+        Skills</h3>
 
-    <div class="flex flex-wrap justify-center gap-8">
-      {% for skill in soft_skills %}
-        <span class="text-white text-lg font-semibold relative cursor-pointer transition-all duration-300 transform hover:scale-110 hover:text-blue-400"
-              data-aos="fade-up" data-aos-delay="{{ forloop.counter0|add:1 }}00" data-aos-duration="800">
+      <div class="flex flex-wrap justify-center gap-8">
+        {% for skill in soft_skills %}
+        <span
+          class="text-white text-lg font-semibold relative cursor-pointer transition-all duration-300 transform hover:scale-110 hover:text-blue-400"
+          data-aos="fade-up" data-aos-delay="{{ forloop.counter0|add:1 }}00" data-aos-duration="800">
           {{ skill.name }}
           <span class="block h-0.5 w-0 bg-blue-500 transition-all duration-500 hover:w-full mt-1"></span>
         </span>
-      {% endfor %}
+        {% endfor %}
+      </div>
     </div>
-  </div>
-</section>
+  </section>
 
 
 
@@ -380,207 +370,196 @@
   <section id="projects" class="py-16 bg-white" data-aos="fade-up">
     <div class="container mx-auto px-4">
       <h2 class="text-3xl font-bold text-center mb-10" data-aos="fade-up" data-aos-delay="100">Projects</h2>
-  
+
       <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
         {% for project in projects %}
-        <div class="bg-gray-100 rounded-2xl shadow-md p-6 hover:shadow-xl transition duration-300 ease-in-out" data-aos="zoom-in-up" data-aos-delay="{{ forloop.counter0|add:'1' }}00">
+        <div class="bg-gray-100 rounded-2xl shadow-md p-6 hover:shadow-xl transition duration-300 ease-in-out"
+          data-aos="zoom-in-up" data-aos-delay="{{ forloop.counter0|add:'1' }}00">
           <h3 class="text-xl font-semibold mb-4 text-center text-blue-800">{{ project.title }}</h3>
           <ul class="list-disc list-inside text-gray-700 text-sm space-y-1 mb-4">
             {% for line in project.description %}
-              <li>{{ line }}</li>
+            <li>{{ line }}</li>
             {% endfor %}
           </ul>
           <div class="text-center">
-            <a href="{{ project.github_link }}" class="text-blue-600 hover:text-blue-800 font-medium" target="_blank">View on GitHub</a>
+            <a href="{{ project.github_link }}" class="text-blue-600 hover:text-blue-800 font-medium"
+              target="_blank">View on GitHub</a>
           </div>
         </div>
         {% endfor %}
       </div>
     </div>
   </section>
-  
-  
-  
 
-{% load static %}
 
-<!-- ✅ Certificates Section -->
-{% load static %}
 
-<!-- ✅ Certificates Section -->
-<section id="certificates" class="py-16 bg-blue-50">
-  <div class="container mx-auto px-4">
-    <h2 class="text-3xl font-bold text-center mb-10 text-blue-900">🎓 My Certificates</h2>
 
-    <!-- Certificates Grid -->
-    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
-      {% for certificate in certificates %}
-      <div 
-        class="bg-blue-100 rounded-xl shadow-md hover:shadow-xl transform transition duration-300 hover:scale-105 p-5 text-center cursor-pointer"
-        onclick="showModal('{% static certificate.image %}', '{{ certificate.title|escapejs }}')"
-      >
-        <div class="text-5xl mb-3">📜</div>
-        <h3 class="text-lg font-semibold text-blue-800 mb-1">{{ certificate.title }}</h3>
-        <p class="text-sm text-gray-700">🏫 {{ certificate.issued_by }}</p>
-      </div>
-      {% endfor %}
-    </div>
-  </div>
+  {% load static %}
 
-  <!-- ✅ Responsive Modal for Portrait + Landscape -->
-  <div id="certModal" class="fixed inset-0 bg-black bg-opacity-70 z-50 hidden items-center justify-center p-4">
-    <div class="relative bg-white p-4 rounded-xl max-w-3xl w-full max-h-[90vh] overflow-auto">
-      <!-- Close Button -->
-      <button class="absolute top-2 right-2 text-gray-500 hover:text-red-500 text-2xl font-bold z-10" onclick="closeModal()">×</button>
+  <!-- ✅ Certificates Section -->
+  {% load static %}
 
-      <!-- Modal Title -->
-      <h2 id="modalTitle" class="text-center text-xl font-semibold mb-4 text-blue-700"></h2>
+  <!-- ✅ Certificates Section -->
+  <section id="certificates" class="py-16 bg-blue-50">
+    <div class="container mx-auto px-4">
+      <h2 class="text-3xl font-bold text-center mb-10 text-blue-900">🎓 My Certificates</h2>
 
-      <!-- Certificate Image -->
-      <div class="flex justify-center">
-        <img id="modalImage" src="" alt="Certificate" class="max-w-full max-h-[75vh] object-contain rounded-md shadow" />
+      <!-- Certificates Grid -->
+      <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+        {% for certificate in certificates %}
+        <div
+          class="bg-blue-100 rounded-xl shadow-md hover:shadow-xl transform transition duration-300 hover:scale-105 p-5 text-center cursor-pointer"
+          onclick="showModal('{% static certificate.image %}', '{{ certificate.title|escapejs }}')">
+          <div class="text-5xl mb-3">📜</div>
+          <h3 class="text-lg font-semibold text-blue-800 mb-1">{{ certificate.title }}</h3>
+          <p class="text-sm text-gray-700">🏫 {{ certificate.issued_by }}</p>
+        </div>
+        {% endfor %}
       </div>
     </div>
-  </div>
-</section>
 
-<!-- ✅ Modal Script -->
-<script>
-  function showModal(imageUrl, title) {
-    document.getElementById("modalTitle").innerText = title;
-    document.getElementById("modalImage").src = imageUrl;
-    document.getElementById("certModal").classList.remove("hidden");
-    document.getElementById("certModal").classList.add("flex");
-  }
+    <!-- ✅ Responsive Modal for Portrait + Landscape -->
+    <div id="certModal" class="fixed inset-0 bg-black bg-opacity-70 z-50 hidden items-center justify-center p-4">
+      <div class="relative bg-white p-4 rounded-xl max-w-3xl w-full max-h-[90vh] overflow-auto">
+        <!-- Close Button -->
+        <button class="absolute top-2 right-2 text-gray-500 hover:text-red-500 text-2xl font-bold z-10"
+          onclick="closeModal()">×</button>
 
-  function closeModal() {
-    document.getElementById("certModal").classList.remove("flex");
-    document.getElementById("certModal").classList.add("hidden");
-  }
-</script>
+        <!-- Modal Title -->
+        <h2 id="modalTitle" class="text-center text-xl font-semibold mb-4 text-blue-700"></h2>
+
+        <!-- Certificate Image -->
+        <div class="flex justify-center">
+          <img id="modalImage" src="" alt="Certificate"
+            class="max-w-full max-h-[75vh] object-contain rounded-md shadow" />
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ✅ Modal Script -->
+  <script>
+    function showModal(imageUrl, title) {
+      document.getElementById("modalTitle").innerText = title;
+      document.getElementById("modalImage").src = imageUrl;
+      document.getElementById("certModal").classList.remove("hidden");
+      document.getElementById("certModal").classList.add("flex");
+    }
+
+    function closeModal() {
+      document.getElementById("certModal").classList.remove("flex");
+      document.getElementById("certModal").classList.add("hidden");
+    }
+  </script>
 
 
 
 
-<!--education section-->
-<section id="education" class="bg-black text-white py-20 px-4">
-  <h2 class="text-4xl font-bold text-center text-cyan-400 mb-16" data-aos="zoom-in" data-aos-duration="1000">
-    🎓 My Education
-  </h2>
+  <!--education section-->
+  <section id="education" class="bg-black text-white py-20 px-4">
+    <h2 class="text-4xl font-bold text-center text-cyan-400 mb-16" data-aos="zoom-in" data-aos-duration="1000">
+      🎓 My Education
+    </h2>
 
-  <div class="flex flex-col items-center space-y-12">
-    {% for edu in education %}
-      <div class="max-w-3xl w-full bg-gradient-to-br from-gray-900 to-gray-800 rounded-2xl border border-cyan-500 p-8 shadow-lg hover:shadow-cyan-500/30 transition-all duration-500"
-           data-aos="fade-up" 
-           data-aos-offset="200"
-           data-aos-duration="1200"
-           data-aos-easing="ease-in-out">
-           
+    <div class="flex flex-col items-center space-y-12">
+      {% for edu in education %}
+      <div
+        class="max-w-3xl w-full bg-gradient-to-br from-gray-900 to-gray-800 rounded-2xl border border-cyan-500 p-8 shadow-lg hover:shadow-cyan-500/30 transition-all duration-500"
+        data-aos="fade-up" data-aos-offset="200" data-aos-duration="1200" data-aos-easing="ease-in-out">
+
         <h3 class="text-2xl font-semibold text-cyan-300 mb-2">📘 {{ edu.degree }}</h3>
         <p class="text-sm text-gray-400 mb-1">🏫 {{ edu.institution }} — 📅 {{ edu.year }}</p>
         <p class="text-sm font-medium text-white mb-4">📊 Score: {{ edu.score }}</p>
 
         <ul class="list-disc pl-5 space-y-1 text-gray-300">
           {% for point in edu.details %}
-            <li class="hover:text-cyan-400 transition duration-300">✅ {{ point }}</li>
+          <li class="hover:text-cyan-400 transition duration-300">✅ {{ point }}</li>
           {% endfor %}
         </ul>
       </div>
-    {% endfor %}
-  </div>
-</section>
-
-
-
-
-
-<!-- Contact Section -->
-<section id="contact" class="bg-black py-16 px-4 sm:px-6 lg:px-8 text-white transition-all duration-700 ease-in-out">
-  <div class="max-w-3xl mx-auto text-center animate-fade-in-up">
-    <h2 class="text-4xl font-bold text-white mb-8 tracking-wide animate-bounce">📞 Contact Me</h2>
-    
-    <div class="text-lg space-y-6">
-      <p class="transform transition duration-500 hover:scale-105">
-        <strong>👤 Name:</strong> {{ contact.name }}
-      </p>
-      <p class="transform transition duration-500 hover:scale-105">
-        <strong>📧 Email:</strong> 
-        <a href="mailto:{{ contact.email }}" class="text-blue-400 hover:underline">{{ contact.email }}</a>
-      </p>
-      <p class="transform transition duration-500 hover:scale-105">
-        <strong>📱 Phone:</strong> {{ contact.phone }}
-      </p>
-      <p class="transform transition duration-500 hover:scale-105">
-        <strong>📍 Location:</strong> {{ contact.location }}
-      </p>
-      <p class="transform transition duration-500 hover:scale-105">
-        <strong>🔗 LinkedIn:</strong> 
-        <a href="{{ contact.linkedin }}" target="_blank" class="text-blue-400 hover:underline">{{ contact.linkedin }}</a>
-      </p>
-      <p class="transform transition duration-500 hover:scale-105">
-        <strong>💻 GitHub:</strong> 
-        <a href="{{ contact.github }}" target="_blank" class="text-blue-400 hover:underline">{{ contact.github }}</a>
-      </p>
+      {% endfor %}
     </div>
-  </div>
-</section>
+  </section>
+
+
+
+
+
+  <!-- Contact Section -->
+  <section id="contact" class="bg-black py-16 px-4 sm:px-6 lg:px-8 text-white transition-all duration-700 ease-in-out">
+    <div class="max-w-3xl mx-auto text-center animate-fade-in-up">
+      <h2 class="text-4xl font-bold text-white mb-8 tracking-wide animate-bounce">📞 Contact Me</h2>
+
+      <div class="text-lg space-y-6">
+        <p class="transform transition duration-500 hover:scale-105">
+          <strong>👤 Name:</strong> {{ contact.name }}
+        </p>
+        <p class="transform transition duration-500 hover:scale-105">
+          <strong>📧 Email:</strong>
+          <a href="mailto:{{ contact.email }}" class="text-blue-400 hover:underline">{{ contact.email }}</a>
+        </p>
+        <p class="transform transition duration-500 hover:scale-105">
+          <strong>📱 Phone:</strong> {{ contact.phone }}
+        </p>
+        <p class="transform transition duration-500 hover:scale-105">
+          <strong>📍 Location:</strong> {{ contact.location }}
+        </p>
+        <p class="transform transition duration-500 hover:scale-105">
+          <strong>🔗 LinkedIn:</strong>
+          <a href="{{ contact.linkedin }}" target="_blank" class="text-blue-400 hover:underline">{{ contact.linkedin
+            }}</a>
+        </p>
+        <p class="transform transition duration-500 hover:scale-105">
+          <strong>💻 GitHub:</strong>
+          <a href="{{ contact.github }}" target="_blank" class="text-blue-400 hover:underline">{{ contact.github }}</a>
+        </p>
+      </div>
+    </div>
+  </section>
 
 
 
 
 
 
-<!-- Certificate Animation Styles -->
-<style>
-  .scroll-animate {
-    transition: all 0.6s ease;
-  }
+  <!-- Certificate Animation Styles -->
+  <style>
+    .scroll-animate {
+      transition: all 0.6s ease;
+    }
 
-  .scroll-animate.visible {
-    opacity: 1;
-    transform: translateY(0);
-  }
-</style>
+    .scroll-animate.visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  </style>
 
-<!-- Scroll Observer -->
-<script>
-  const observer = new IntersectionObserver(
-    (entries) => {
-      entries.forEach((entry) => {
-        if (entry.isIntersecting) {
-          entry.target.classList.add("visible");
-        }
-      });
-    },
-    { threshold: 0.2 }
-  );
+  <!-- Scroll Observer -->
+  <script>
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add("visible");
+          }
+        });
+      },
+      { threshold: 0.2 }
+    );
 
-  document.querySelectorAll(".scroll-animate").forEach((el) => observer.observe(el));
-</script>
-
-<script>
-  window.onload = function() {
-      // Check if there's a stored scroll position in sessionStorage
-      if (sessionStorage.getItem('scrollPosition')) {
-          // Set the scroll position to the value stored in sessionStorage
-          window.scrollTo(0, sessionStorage.getItem('scrollPosition'));
-      }
-
-      // Store the scroll position when the user scrolls
-      window.onscroll = function() {
-          sessionStorage.setItem('scrollPosition', window.scrollY);
-      }
-  }
-</script>
+    document.querySelectorAll(".scroll-animate").forEach((el) => observer.observe(el));
+  </script>
 
 
-  
-  
-  
-  
-  
-  
-  
+
+
+
+
+
+
+
+
+
 
   <!-- ✅ Image Slider Script -->
   <script>
@@ -614,13 +593,38 @@
     });
   </script>
 
-  <!-- ✅ AOS Animation Script -->
+  <!-- ✅ Lenis Smooth Scrolling + AOS -->
+  <script src="https://cdn.jsdelivr.net/gh/studio-freight/lenis@1.0.29/bundled/lenis.min.js"></script>
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
   <script>
-    AOS.init({ duration: 1000, once: true });
+    // Initialize Lenis with "Ultra Smooth" settings
+    const lenis = new Lenis({
+      duration: 2.0, // Increased from 1.2 for longer inertia
+      easing: (t) => Math.min(1, 1.001 - Math.pow(2, -10 * t)),
+      direction: 'vertical',
+      gestureDirection: 'vertical',
+      smooth: true,
+      mouseMultiplier: 1,
+      smoothTouch: false,
+      touchMultiplier: 2,
+    });
+
+    // Connect Lenis to AOS
+    function raf(time) {
+      lenis.raf(time);
+      requestAnimationFrame(raf);
+    }
+    requestAnimationFrame(raf);
+
+    // Initialize AOS
+    AOS.init({
+      duration: 1000,
+      once: true,
+    });
   </script>
 
-<!-- <script>
+  <!-- <script>
   let animationInterval;
 
   function startAnimation() {
@@ -647,4 +651,5 @@
 
 
 </body>
+
 </html>
